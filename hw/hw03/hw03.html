@@ -1,0 +1,85 @@
+<!-- hw03.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>여행지 소개 페이지</title>
+    <style>            
+        body { background-color: aliceblue; }
+        h1 {
+            color: #F4A9A8;
+            font-family: cursive;
+            font-size: 50px;
+            text-align: center;
+            text-shadow: 8px 8px 8px #666666;
+        }
+         h2 {
+            color: #B8A7EA;
+            font-size: 30px;
+            text-align: center;
+            font-style: italic;
+        }
+        h3 { color: #9BAEF3}
+        p {
+            color: #94B6EA;
+            font-family: fantasy;
+            font-size: 14px;
+            line-height: 150%;
+        }
+        ul {
+          list-style-type: none;
+        }
+        span {color: #F4A9A8;}
+/*         CSS 추가 소스 시작 */
+        #logo {text-align: center;}
+        #img_main {
+            text-align: center;
+            border: 1px solid #FFFFFF;
+            border-radius: 100%;
+        }
+        .tourism {text-align: center;}
+        .tourism img { 
+            border: 1px solid #FFFFFF; 
+            border-radius:50%;
+        }
+
+/*         CSS 추가 소스 끝 */
+    </style>
+  </head>
+  <body>
+    <h1>vladivostok</h1>
+    <h2>2시간 반으로 즐기는 유럽감성</h2>
+    <div id="logo">
+      <img src="./img/vladivostok1.JPG" width="500" height="350" alt="vladivostok1">
+    </div>
+    <p>
+      <a href="https://terms.naver.com/entry.nhn?cid=66751&docId=5936012&categoryId=66773">블라디보스토크</a>는
+      ‘동방의 지배자’라는 뜻으로 주로 태평양 연안의 해군기지로 발전한 러시아 극동 지방의 최남단 도시다.
+      중국이나 북한과의 국경에서 멀지 않은 동해의 골든혼만 주변에 자리 잡은 블라디보스토크는 극동연방관구와 프리모르스키(연해)주의 행정중심지다.
+    </p>
+    <h3>풍경</h3>s
+    <div id="logo">
+     <img id="img_main" src="./img/vladivostok2.JPEG" height="400" alt="vladivostok2">
+     <img id="img_main" src="./img/vladivostok3.JPG" height="400" alt="vladivostok3">
+    </div>
+     <h3>관광지</h3>
+     <ul class="tourism">
+       <img src="./img/vladivostok4.JPG" height="600" alt="vladivostok4">
+       <li><span>해양공원:</span> 볼거리와 즐길거리가 가득한 해양 테마파크</li>
+       <img src="./img/vladivostok5.JPG" height="600" alt="vladivostok5">
+       <li><span>굼백화점:</span> 블라디보스토크에서 가장 오래된 백화점</li>
+       <img src="./img/vladivostok6.JPG" height="600" alt="vladivostok6">
+       <li><span>아르바트거리:</span> 쇼핑 스팟과 맛집이 밀집되어 있는 유럽풍 번화가</li>
+   </ul>
+   <h3>쇼핑리스트</h3>
+   <ul>
+     <li>곰새우</li>
+     <li>꿀</li>
+     <li>차</li>
+   </ul>
+    <h3>vlog</h3>
+     <video width="320" height="240" controls loop>
+      <source src="./video/vladivostok-video.mp4" type="video/mp4">
+    </video>
+  </body>
+</html>

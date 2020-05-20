@@ -1,0 +1,75 @@
+/* style.css */
+        * { margin: 0; padding: 0; }
+        #wrapper {
+            width: 900px;
+            margin: 0 auto;
+        }
+        body {
+            color: blue;
+            background-color: #8EAEDF;
+            font-weight: bold;
+            font-family: '맑은 고딕','돋움', arial, Sans-Serif
+        }
+        #button {
+            width: 100px;
+            color: white;
+            background-color: #8EAEDF;
+            text-align: center;
+            height: 60px;
+            padding: 20px 0px 0px 0px;
+            margin: 30px;
+            font-size: 20px;
+        }
+        #button p { 
+            font-size: 20px;
+            background-color: #EF889A;
+            margin-top: 5px;
+        }
+        #button a {
+            text-decoration: none;
+            text-align: center;
+            color:black;
+        }
+        #button a:hover {
+            text-decoration: underline;
+            text-align: center;
+            background-color: #8A7FAE;
+            color: white;
+        }
+        #button img {
+            background-size: cover;
+            background-color: #8EAEDF; 
+            width: 80px;
+        }
+        #nav {
+            padding: 30px;
+        }
+        #nav li{
+            font-size: 20px;
+            display: inline-block;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            list-style-type: none;
+            width: 80px;
+            border-bottom: 1px solid lightgray;
+            margin-left: 55px;
+            text-align: center;
+        }
+        a { text-decoration: none; }
+        a:hover { color: #FFFFFF; }
+        li:hover:nth-child(odd) { background-color: #CE97B0; }
+        li:hover:nth-child(even) { background-color: #CCAEE6; }
+    
+        .active {
+            color: crimson;
+        }
+/*     footer */
+        #footer {
+            color: #000000;
+            border-top: 1px solid #cccccc;
+            padding-top: 20px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        #footer_copyright .site:hover { color: aqua; }
+/*     footer end */
