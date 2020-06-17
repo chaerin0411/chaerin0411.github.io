@@ -1,0 +1,70 @@
+﻿/* main.css */
+/* 메인 콘텐츠 */
+section #main {
+    width: 990px;
+    margin: auto;
+}
+
+/* 좌측 카테고리 + 메인 이미지 */
+section #cat1 {
+    width: 215px;
+    float: left;
+    margin-top: 250px;
+    font-weight: bold;
+}
+section #cat1 #cat_title {
+    padding: 12px;
+    background-color: #F4A9A8;
+    color: #ffffff;
+    text-align: center;
+}
+section #cat1 li  {
+    color: #666666;
+    padding: 7px 0 7px 30px;
+    border-bottom: solid 1px rgba(244, 169, 168, 0.44);
+}
+section #cat2 {
+    float: left;
+    margin-top: 250px;
+}
+section #cat2 img {
+    width: 700px;
+}
+
+/* 시리즈 */
+section #series {
+    height: 650px;
+    margin-top: 20px;
+    border-top: solid 2px #F4A9A8;
+}
+section #series h3 {
+    margin: 20px 0 0 35px;
+}
+section #series h3 span{
+    color: #F4A9A8;
+}
+section #series .item{
+    float: left;
+    text-align: center;
+    margin: 40px 0 0 40px;
+    border: 1px solid rgba(244, 169, 168, 0.8);
+    border-radius: 10px;
+}
+section #series .item img {
+    flex: 1;
+    border-radius: 10px;
+}
+section #series .item img:hover {
+    transform: scale(1.5)
+}
+section #series .item .subject{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ffffff;
+    background-color: rgba(244, 169, 168, 0.8);
+}
+section #seies .item .comment{
+    margin: 10px;
+    color: #888888;
+}

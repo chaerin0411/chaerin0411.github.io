@@ -1,0 +1,58 @@
+/*practice-01-article.css*/
+/*gooogle webfont*/
+@import
+url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Nanym+Gothic&family=Noto+Sans+KR:wght@500;700&display=swap');
+*{ margin:0; padding: 0; }
+#wrapper {
+/*    max-width: 1000px;*/
+/*    display: block;*/
+    width: 700px;
+    margin: 0 auto;
+}
+body {
+/*    font-family: 'Nanum Gothic', sans-serif;*/
+/*    line-height: 160%*/
+}
+figure {
+/*    display:block;*/
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+figcaption {
+    font-size: 0.8em;
+    margin-top: 1em;
+/*    margin-left: 40px;*/
+/*    margin-right: 40px;*/
+    line-height: 150%;
+}
+#p_company {
+    font-size: 1.85em;
+    font-family: 'DO Hyeon', sans-serif;
+}
+#p_headline {
+    font-size: 1.85em;
+/*    font-family: 'Nanym Gothic', sans-serif;*/
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+#p_reporter {
+    font-size: 0.9em;
+    color: #999999;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #EEEEEE;
+    margin-bottom: 40px;
+}
+.section {
+    font-size: 1.04em;
+    padding: 10px 0;
+}
+.section p {
+    padding: 5px 0;
+    margin-bottom: 10px;
+}
+.copyright {
+    margin-bottom: 50px;
+}

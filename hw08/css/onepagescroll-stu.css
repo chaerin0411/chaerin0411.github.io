@@ -1,0 +1,39 @@
+/* ./css/onepagescroll-fixed-stu.css */
+* { margin: 0; padding: 0; }
+#wrapper {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+header {
+	position: relative;
+	height: 130px;
+	margin-bottom: 0;
+}
+header > h1 {
+	font-size: 2.5em;
+	text-align: center;
+	line-height: 70px;
+	margin-bottom: 10px;
+    text-shadow: 1px 3px 2px #cccccc;
+}
+
+
+
+/*   이미지삽입 ../img/img_onepage/ */
+.page1 {
+	background:url('../img/img_onepage/eu.jpg') no-repeat center;			
+	background-size: cover;
+}
+.page2 {
+	background:url('../img/img_onepage/us.jpg') no-repeat center;			
+	background-size: cover;
+}
+.page3 {
+	background:url('../img/img_onepage/ch.jpg') no-repeat center;			
+	background-size: cover;
+}
+.page4 {
+	background:url('../img/img_onepage/jp.jpg') no-repeat center;	
+	background-size: cover;		
+}	

@@ -1,9 +1,10 @@
-<!-- week09-menu.html -->
+<!-- index.html -->
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Menu-nth</title>
+<meta charset="UTF-8">
+<title>Index</title>
+<link href="https://fonts.googleapis.com/css?family=Monoton|Montserrat|Source+Sans+Pro" rel="stylesheet">
     <style>
 /*    GNB 메뉴 시작     */
     @import url('./week/css/style.css');
@@ -12,7 +13,7 @@
             text-align: center;
         }
         #title {
-            font-family: cursive; 
+            font-family: cursive;
             text-align: center;
             padding: 20px;
             margin-bottom: 50px;
@@ -20,34 +21,14 @@
             font-size: 7em;
             text-shadow: 10px 10px 10px #555555;
         }
+        #logo ul {
+            list-style: none;
+            text-align: center;
+        }
         #logo img {
             border: 5px solid white;
             border-radius: 50%;
             margin: 20px 0px;
-        }
-        #profile img {
-            border: 5px solid white;
-            border-radius: 20%;
-            margin: 20px 0px;
-        }
-        #profile p {
-            font-size: 20px;
-            margin: 10px;
-            padding-bottom: 20px;
-        }
-        #profile_introduce {
-            font-size: 16px;
-            margin-top: 20px;
-            margin-bottom: 100px;
-            padding-bottom: 50px;
-        }
-        #profile_list {
-            list-style-type: none;
-            padding: 20px;
-            text-align: center;
-        }
-        #profile {
-            border: 1px solid #FFFFFF;
         }
     </style>
 </head>
@@ -75,20 +56,24 @@
         <div id="content">
             <h1 id="title">Internet Basic Practice</h1>
             <div id="logo">
-                <img src="./week/img/landscape6.JPG" alt="landscape6" width="700" title="풍경사진">
-            </div>
-            <div id="profile">
-               <img src="./week/img/profile.JPG" alt="profile" width="300" title="프로필사진">
-                <p>컴퓨터소프트웨어공학과 1학년 YA반 20202296 전채린</p>
-            </div>
-            <div id="profile_introduce">
-                  <ul id="profile_list">
-                      <li>인스타그램: chaerin0411</li>
-                      <li>페이스북: 전채린</li>
-                      <li>카카오톡: jeonchaerin</li>
-                      <li>이메일: chaerin0411@naver.com</li>
-                      <li>전화번호: 010-4604-5578</li>
-                  </ul>
+               <ul>
+                   <li>HOME</li>
+                   <li><a href="./menu.html" class="active"><img src="./week/img/landscape1.JPG" alt="landscape1.JPG" width="400" title="HOME"></a></li>
+                   <li>INDEX</li>
+                   <li><a href="./index.html" class="active"><img src="./week/img/landscape2.JPG" alt="landscape2.JPG" width="400" title="INDEX"></a></li>
+                   <li>HW02</li>
+                   <li><a href="./hw/hw02/hw02.html"><img src="./week/img/landscape3.JPG" alt="landscape3.JPG" width="400" title="HW02"></a></li>
+                   <li>HW03</li>
+                   <li><a href="./hw/hw03/hw03.html"><img src="./week/img/landscape4.JPG" alt="landscape4.JPG" width="400" title="HW03"></a></li>
+                   <li>HW04</li>
+                   <li><a href="./hw/hw04/hw04.html"><img src="./week/img/landscape5.JPG" alt="landscape5.JPG" width="400" title="HW04"></a></li>
+                   <li>HW05</li>
+                   <li><a href="./hw/hw05/practice-01-article.html"><img src="./week/img/landscape6.JPG" alt="landscape6.JPG" width="400" title="HW05"></a></li>
+                   <li><a href="#"><img src="./week/img/landscape7.JPG" alt="landscape7.JPG" width="400" title="풍경사진"></a></li>
+                   <li><a href="#"><img src="./week/img/landscape8.JPG" alt="landscape8.JPG" width="400" title="풍경사진"></a></li>
+                   <li><a href="#"><img src="./week/img/landscape9.JPG" alt="landscape9.JPG" width="400" title="풍경사진"></a></li>
+                   <li><a href="#"><img src="./week/img/landscape10.JPG" alt="landscape10.JPG" width="400" title="풍경사진"></a></li>
+               </ul>
             </div>
        </div>  <!-- content -->
 <!--       footer 시작  -->

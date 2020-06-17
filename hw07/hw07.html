@@ -1,0 +1,188 @@
+<!-- hw07.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+<!--<link href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap" rel="stylesheet">-->
+     
+    <style>
+        /*    GNB 메뉴 시작     */
+    @import url('../week/css/style.css');
+/*    GNB 메뉴 끝     */  
+        h1{
+            color: indianred;
+            margin: 20px 0px;
+        }
+        h2 {
+            color: white;
+            margin: 20px 0px;
+            background-color: #f4a9a8;
+            font-size: 36px;
+        }
+        strong, em{
+            color: orange;
+            margin-bottom: 20px;
+        }
+        #square { list-style-type: square; }
+        #circle{
+            list-style-type: circle;
+            color: ;
+        }
+        .circle {
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        .decimal {
+            list-style-type: decimal;
+            margin-left: 20px;
+            padding-left: 10px;
+        }
+        #content li{
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        #content a:hover {
+            background-color: lightgreen;
+            color: #000000;
+        }
+/*        테이블 */
+        table, tr, th, td {
+            border: solid 1px #f4a9a8;
+            border-collapse: collapse;
+            padding: 20px;
+            font-family: 'Nanum Gothic', sans-serif;
+            font-weight: bold;
+            color: #000000;
+        }
+        #tbl_bottons input[type='submit'] {
+            padding: 12px 17px;
+            margin: 5px;
+            color: #fff;
+            background: #fa6e3e;
+            border: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            display: inline-block;
+            width: 80px;            
+        }
+        #tbl_bottons input[type='reset'] {
+            padding: 12px 17px;
+            margin: 5px;
+            color: #fff;
+            background: #fa6e3e;
+            border: 0;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            float: right;
+            display: inline-block;
+            width: 80px;   
+        }
+        #tbl_bottons input[type='submit']:hover {
+            background: #d55427;
+            cursor: pointer;
+        }
+        #tbl_bottons input[type='reset']:hover {
+            background: #d55427;
+            cursor: pointer;
+        }
+
+/*        contact 헤더 */
+        #txt_center {
+            font-size: 38px;
+            text-align: center;
+            background-color: #f4a9a8;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+<!--    GNB 메뉴 시작 -->
+        <div id="button">
+            <a href="../index.html"><img src="../week/img/logo.png" alt="본인사진"></a>
+<!--            <a href="../index.html">본인 아이디</a> -->
+       <p>YA 전채린</p>
+        </div>
+        <div id="nav">
+            <lu>
+                <li><a href="../menu.html">HOME</a></li>
+                <li><a href="../index.html">PROFILE</a></li>
+                <li><a href="../hw02/hw02.html">HW02</a></li>
+                <li><a href="../hw03/hw03.html">HW03</a></li>
+                <li><a href="../hw04/hw04.html">HW04</a></li>
+                <li><a href="../hw05/practice-01-article.html">HW05</a></li>
+                <li><a href="../hw06/hw06.html">HW06</a></li>
+                <li><a href="../hw07/hw07.html">CONTACT</a></li>
+            </lu>
+        </div>
+<!--        GNB 메뉴 끝 -->
+   <div id="contact">
+    <div class="contA">
+      <h1>인터넷기초실습 교과목</h1>
+      <p>웹 프로그래밍 기초가 되는 <strong>HTML5</strong>와 <strong>CSS3</strong>를 중심으로 학습합니다.</p>
+      <p>HTML5과 CSS3를 사용한 <em>웹 사이트 제작</em>을 작성합니다.</p> 
+    </div>
+    
+<!--    본문 시작 (Contact) -->    
+        <div class="contB">
+        <h2 id="txt_center">메시지 보내기</h2>   
+
+        <div id='tbl_contact'>
+         <form id='form_contact'>
+          <table border="3">
+             <tr>
+              <td><lable> 이름 </lable></td>
+              <td> <input type="text" name="writer" size="55"> </td>
+              <td><lable> 연락처 </lable></td>
+              <td> <input type="password" name="pw"> </td>
+             </tr>
+             <tr>
+              <td><lable> 이메일 </lable></td>
+              <td> <input type="text" name="email" size="39"> @
+              <select>
+               <option> 직접입력 </option>
+               <option> naver.com </option>
+               <option> daum.net </option>
+               <option> gmail.com </option>
+              </select> </td>
+              <td> <img src="./lock.png" with="30" alt=""></td>
+              <td> <input type="radio" name="protect" checked> 공개 
+                   <input type="radio" name="protect"> 비공개</td>
+             </tr>
+             <tr>
+              <td><lable> 제목 </lable></td>
+              <td colspan="4"> <input type="text" size="98"> </td>
+             </tr>
+             <tr>
+              <td><lable> 메시지 </lable></td>
+              <td colspan="4"> <textarea cols="100" rows="20"></textarea> </td>
+             </tr>
+             <tr>
+              <td><lable> 파일 </lable></td>
+              <td colspan="4"> <input type="file"> </td>
+             </tr>
+          </table>
+          <div id="tbl_bottons">
+              <input type="reset" value="다시쓰기">
+              <input type="submit" value="전송">
+          </div>     
+          </form>    
+        </div>
+      </div>
+  <!-- content -->
+   </div>   <!-- content -->  
+  <!--       footer 시작  -->
+       <div id="footer">
+          <div id="footer_copyright">
+            <p>
+                Copyright &copy <a href="../index.html" class="site">chaerin0411</a> All rights reserved.
+            </p>
+            <span>EMAIL : chaerin0411@naver.com</span>
+          </div>
+       </div> <!-- footer -->
+<!--       footer 끝  -->  
+  </div>    <!-- wrapper -->
+  

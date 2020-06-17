@@ -1,0 +1,59 @@
+<!-- pr12-01_onepagescroll.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>pr12-01_OnePageScroll</title>
+
+<link rel="stylesheet" href="./css/onepagescroll.css">
+
+<!-- scrollTo.js 플러그인 CDN 사용-->
+<!--
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+-->
+
+<!-- scrollTo.js 플러그인 사용-->
+<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/jquery.scrollTo.min.js"></script>
+
+<!-- scrollTo.js 플러그인 실행-->
+<script>
+    $(function() {
+        $('nav a').click(function(e) {
+            $.scrollTo(this.hash || 0, 1500);
+            e.preventDefault();
+        });
+    });
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <h1>여행을 떠나요</h1>
+        <nav>
+            <a href="#eu" class="nav-btn">유럽</a>
+            <a href="#us" class="nav-btn">미국</a>
+            <a href="#ch" class="nav-btn">중국</a>
+            <a href="#jp" class="nav-btn">일본</a>
+        </nav>
+    </header>
+    <div id="container">
+        <section id="eu" class="page1">
+            <h2>Europe</h2>
+        </section>
+        <section id="us" class="page2">
+            <h2>United States</h2>
+        </section>
+        <section id="ch" class="page3">
+            <h2>China</h2>
+        </section>
+        <section id="jp" class="page4">
+            <h2>Japan</h2>
+        </section>        
+    </div> <!-- container -->
+</div> <!-- wrapper -->
+</body>
+</html>
+
